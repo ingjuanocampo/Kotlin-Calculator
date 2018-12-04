@@ -3,8 +3,8 @@ package calculator.example.com.kotlincalculator.mvp.model
 class CalculatorModel {
 
     var action: CalculatorActions = CalculatorActions.NON_SELECTED
-    private var operator1: Float = 0.0F
-    private var operator2: Float = 0.0F
+    var operator1: Float = 0.0F
+    var operator2: Float = 0.0F
 
     fun setOperator(value: Float) {
         if (action == CalculatorActions.NON_SELECTED) {

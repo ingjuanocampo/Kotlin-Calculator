@@ -10,7 +10,7 @@ import calculator.example.com.kotlincalculator.mvp.model.CalculatorActions
 import com.globant.counter.utils.bus.RxBus
 import kotlinx.android.synthetic.main.activity_calculator.*
 
-class CalculatorView(activity: Activity) : ActivityView(activity) {
+open class CalculatorView(activity: Activity) : ActivityView(activity) {
 
     fun setExpression(expression: String) {
         activity?.text_expression?.text = expression
