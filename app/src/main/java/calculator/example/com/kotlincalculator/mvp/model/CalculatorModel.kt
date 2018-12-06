@@ -15,7 +15,7 @@ class CalculatorModel {
     }
 
     fun getExpression(): String {
-        return " $operator1 ${action.value}  "
+        return "$operator1 ${action.value}"
     }
 
     fun getResult(): String {
