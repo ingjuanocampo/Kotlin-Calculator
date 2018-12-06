@@ -11,15 +11,15 @@
         android:id="@+id/text_expression"
         style="@style/TextAppearance.AppCompat.Large"
         android:hint="@string/app_name"
-        android:layout_margin="20dp"
+        android:layout_margin="@dimen/margin_normal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <EditText
         android:id="@+id/edit_text_input"
         android:inputType="numberDecimal"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
+        android:layout_marginRight="@dimen/margin_normal"
+        android:layout_marginLeft="@dimen/margin_normal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -33,19 +33,19 @@
 
         <Button
             android:id="@+id/btn_sum"
-            android:text="+" />
+            android:text="@string/calculator_action_sum" />
 
         <Button
             android:id="@+id/btn_rest"
-            android:text="-" />
+            android:text="@string/calculator_action_rest" />
 
         <Button
             android:id="@+id/btn_multi"
-            android:text="*" />
+            android:text="@string/calculator_action_multi" />
 
         <Button
             android:id="@+id/btn_div"
-            android:text="/" />
+            android:text="@string/calculator_action_div" />
 
         <Space />
 
