@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".CalculatorActivity">
+
+    <TextView
+        android:id="@+id/text_expression"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:hint="@string/app_name"
+        android:layout_margin="@dimen/margin_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edit_text_input"
+        android:inputType="numberDecimal"
+        android:layout_marginRight="@dimen/margin_normal"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <GridLayout
+        android:id="@+id/GridLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        android:rowCount="3">
+
+        <Button
+            android:id="@+id/btn_sum"
+            android:text="@string/calculator_action_sum" />
+
+        <Button
+            android:id="@+id/btn_rest"
+            android:text="@string/calculator_action_rest" />
+
+        <Button
+            android:id="@+id/btn_multi"
+            android:text="@string/calculator_action_multi" />
+
+        <Button
+            android:id="@+id/btn_div"
+            android:text="@string/calculator_action_div" />
+
+        <Space />
+
+        <Space />
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/btn_equal"
+            android:text="=" />
+    </GridLayout>
+
+</LinearLayout>

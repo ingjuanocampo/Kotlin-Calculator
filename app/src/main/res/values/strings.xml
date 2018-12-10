@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Kotlin Calculator</string>
+    <string name="calculator_action_sum">+</string>
+    <string name="calculator_action_rest">-</string>
+    <string name="calculator_action_multi">*</string>
+    <string name="calculator_action_div">/</string>
+</resources>
